@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snack Étalon Chez Sylvain</title>
+    <style>
+        /* Reset basique */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #e63946, #f1faee, #a8dadc);
+            padding: 1.2rem;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(90deg, #d80000, #ffdd00, #009933); /* rouge, jaune, vert */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        nav {
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #444;
+            text-shadow: none;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #d80000; /* rouge */
+            border-bottom: 3px solid #ffdd00; /* jaune */
+            padding-bottom: 0.3rem;
+            font-weight: 800;
+        }
+
+        /* Menu */
+        .menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background: #f9f9f9;
+            border-left: 5px solid #009933; /* vert */
+            padding: 1rem 1.5rem;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.03);
+            box-shadow: 3px 3px 12px rgba(0,0,0,0.15);
+        }
+
+        .menu-item h3 {
+            color: #d80000;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .price {
+            font-weight: 900;
+            color: #009933;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* À propos */
+        .about-text {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact */
+        .contact-info p {
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Services spéciaux */
+        .services-list {
+            list-style: disc inside;
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #009933;
+            color: #fff;
+            margin-top: 3rem;
+            font-weight: 600;
+        }
+
+        /* Images style */
+        .menu-image {
+            width: 100%;
+            max-height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-top: 0.8rem;
+            box-shadow: 1px 1px 6px rgba(0,0,0,0.15);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Snack Étalon Chez Sylvain</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <h3>Poulet au four à l’ail</h3>
+                <img class="menu-image" src="poulet.png2.jpg" />
+                <p>Délicieux poulet à l’ail.</p>
+                <p class="price">4000 F CFA</p>
+            </div>
+            <div class="menu-item">
+                <h3>Couscous</h3>
+                <img class="menu-image" src="poulet.png1.jpg" alt="Couscous" />
+                <p>Plat traditionnel africain riche en saveurs.</p>
+                <p class="price">5000 F CFA</p>
+            </div>
+            <div class="menu-item">
+                <h3>Gésiers</h3>
+                <img class="menu-image" src="gesier.png.jpg" alt="Gésiers" />
+                <p>Gésiers sauter.</p>
+                <p class="price">1500 F CFA</p>
+            </div>
+            <div class="menu-item">
+                <h3>Frites Alloco</h3>
+                <img class="menu-image" src="frites alloco.jpg" alt="Frites Alloco" />
+                <p>Frites croustillantes et alloco Juteuse.</p>
+                <p class="price">1500 F CFA</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>À propos</h2>
+        <p class="about-text">Manger bien, manger sain, manger africain. Snack Étalon Chez Sylvain est reconnu pour offrir le meilleur poulet de Ouaga dans une ambiance conviviale et chaleureuse.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services Spéciaux</h2>
+        <ul class="services-list">
+            <li>Livraison à vos frais</li>
+            <li>Plats à emporter</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Adresse</h2>
+        <div class="contact-info">
+            <p><strong>Adresse :</strong> Ouagadougou, Burkina Faso, Gounghin, juste après l’échangeur de Gounghin en allant vers Marina Market</p>
+            <p><strong>Téléphone :</strong> 76651158 / 71 38 90 76</p>
+            <p><strong>Horaires :</strong> 8h - 00h</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Snack Étalon Chez Sylvain - Tous droits réservés
+    </footer>
+</body>
+</html
